@@ -1,0 +1,9 @@
+﻿{@type:filter}
+input:X(1);
+ if RateOfChange(GetField("稅前息前折舊前淨利"),4) > X then ret=1;
+ SetTotalBar(3);
+ SetOutputName1("稅前息前折舊前淨利");
+ OutputField1(GetField("稅前息前折舊前淨利"));
+ SetOutputName2("稅前息前折舊前淨利增幅%");
+ OutputField2(RateOfChange(GetField("稅前息前折舊前淨利"),4));
+ 

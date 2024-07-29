@@ -1,0 +1,7 @@
+﻿{@type:filter}
+input:N(2),X(1);
+ if Summation(GetField("賣出中單量"),N) > X then ret=1;
+ SetTotalBar(3);
+ SetOutputName1("賣出中單量合計");
+ OutputField1(Summation(GetField("賣出中單量"),N));
+ 
